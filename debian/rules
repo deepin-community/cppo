@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+#export DH_OPTIONS=-v
+
+include /usr/share/ocaml/ocamlvars.mk
+
+DESTDIR := $(CURDIR)/debian/tmp
+export OCAMLFIND_DESTDIR=$(DESTDIR)/$(OCAML_STDLIB_DIR)/cppo_ocamlbuild
+BUILD_PATH=_build/install/default/lib/cppo_ocamlbuild
+
+%:
+	dh $@ --with ocaml
+
+.PHONY: override_dh_auto_install
+override_dh_auto_install:
+	dune install --destdir=$(DESTDIR) --prefix=/usr --libdir=..$(OCAML_STDLIB_DIR)
+	rm -f $(DESTDIR)/usr/doc/*/LICENSE.md
