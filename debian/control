@@ -9,9 +9,9 @@ Build-Depends:
   debhelper-compat (= 13),
   ocaml-dune,
   ocamlbuild
-Standards-Version: 4.5.0
+Standards-Version: 4.6.0
 Rules-Requires-Root: no
-Homepage: https://github.com/mjambon/cppo
+Homepage: https://github.com/ocaml-community/cppo
 Vcs-Git: https://salsa.debian.org/ocaml-team/cppo.git
 Vcs-Browser: https://salsa.debian.org/ocaml-team/cppo
 

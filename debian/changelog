@@ -1,8 +1,18 @@
-cppo (1.6.6-deepin1) unstable; urgency=medium
+cppo (1.6.9-1) unstable; urgency=medium
 
-  * Rebuild
+  * Team upload
+  * New upstream release
 
- -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:35:32 +0800
+ -- Stéphane Glondu <glondu@debian.org>  Fri, 20 Jan 2023 12:46:49 +0100
+
+cppo (1.6.8-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Bump Standards-Version to 4.6.0
+  * Update debian/watch and Homepage
+
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 28 Nov 2021 10:57:16 +0100
 
 cppo (1.6.6-2) unstable; urgency=medium
 

@@ -1,2 +1,2 @@
-version=3
-https://github.com/mjambon/cppo/tags .*/v(.*)\.tar\.gz
+version=4
+https://github.com/ocaml-community/cppo/tags .*/v(.*)\.tar\.gz
